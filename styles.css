@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+  height: 80vh;
+}
+
+.editor, .preview {
+  flex: 1;
+  padding: 15px;
+  background: #f9f9f9;
+  border-radius: 5px;
+  overflow-y: auto;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+}
+
+#markdown-input {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none;
+  font-family: monospace;
+}
+
+#clear-btn {
+  margin-top: 10px;
+  padding: 8px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#clear-btn:hover {
+  background: #c82333;
+}
+
+.preview {
+  border: 1px solid #ddd;
+}
+
+/* Style Markdown elements */
+.preview h1 { font-size: 2em; margin: 0.5em 0; }
+.preview h2 { font-size: 1.5em; margin: 0.5em 0; }
+.preview p { margin: 1em 0; }
+.preview a { color: #007bff; text-decoration: underline; }
+.preview ul, .preview ol { margin: 1em 0 1em 2em; }
+.preview code { background: #e9ecef; padding: 2px 4px; border-radius: 3px; }
+.preview pre { background: #2d2d2d; color: #f8f8f2; padding: 10px; border-radius: 5px; overflow-x: auto; }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+  .editor, .preview {
+    height: 50vh;
+  }
+}
