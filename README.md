@@ -25,7 +25,7 @@ Live at [Deployment URL] (add after hosting).
 
 ## Links
 - Repo: [https://github.com/Amit-asus/markdown-previewer]
-- Live: [Deployment URL]
+- Live: [https://book-list-bqjy.vercel.app/]
 
 ## License
 MIT
